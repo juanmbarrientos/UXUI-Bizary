@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+*{
+    font-family: 'Poppins';
+}
+
 body{
     /* Definición de colores en variables */
     /* Colores de Marca */
@@ -22,7 +26,6 @@ body{
     margin: 0;
 }
 
-
     /* Definición de Estilos de Titulos */
 .titulo_verde{
     font-size: 36px;
@@ -37,7 +40,7 @@ body{
 }
 
 .titulo_blanco{
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 600;
     color: white;
 }
@@ -65,6 +68,27 @@ li{
 
 a{
     text-decoration: none;
+}
+
+
+
+/* ESTADOS DE LA BOTONERA DEL NAV */
+.nav-item > a:link{
+    font-weight: 600;
+}
+
+.nav-item > a:hover{
+    font-weight: 700;
+    color: var(--color-lila);
+}
+
+.nav-item > a:active{
+    font-weight: 700;
+    color: var(--color-verdeAgua);
+}
+
+.buscar{
+    width: 20px;
 }
 
 
@@ -111,6 +135,17 @@ a{
     background-color: var(--color-gris25);
     border-radius: 0 25px 0 25px;
     padding: 20px 0px;
+}
+
+.sale_titulos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.lo_quiero{
+    padding: 14px;
+    background-color: red;
 }
 
 .sale_libros{
@@ -180,11 +215,13 @@ a{
 .foro1{
     border-radius: 0 25px 0 25px;
     background-color:#7c358a;
+    height: 250px;
 }
 
 .foro2{
     border-radius: 0 25px 0 25px;
     background-color: #00a092;
+    height: 250px;
 }
 
 
