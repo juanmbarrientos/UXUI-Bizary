@@ -43,7 +43,7 @@ body{
 }
 
 .titulo_extrabold{
-    font-size: 60px;
+    font-size: 48px;
     font-weight: 700;
     color: var(--color-verdeAgua);
 }
@@ -94,10 +94,11 @@ a{
     text-align: center;
 }
 
-.recomendados_cartas{
-    background-color: #474747;
-    text-align: center;
-    width: 200px;
+.recomendados_cartas > img{
+    max-width: 90%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
 }
 
 
@@ -109,18 +110,17 @@ a{
     margin-top: 30px;
     background-color: var(--color-gris25);
     border-radius: 0 25px 0 25px;
-}
-
-.sale > h1{
-    font-size: 30px;
+    padding: 20px 0px;
 }
 
 .sale_libros{
     display: flex;
+    justify-content: space-between;
 }
 
 .img_sale{
-    max-width: 130px;
+    max-width: 90%;
+    border-radius: 10px;
 }
 
 
@@ -130,12 +130,19 @@ a{
     margin-top: 30px;
 }
 
+.ofertazas div > h1, a{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 
 /* ICONOS */
 
 .condiciones_pago_envio{
     background-color: var(--color-gris25);
+    height: 200px;
+    margin: 30px;
 }
 
 .iconos{
@@ -149,6 +156,20 @@ a{
     margin-top: 30px;
 }
 
+.categorias ul{
+    display: flex;
+    justify-content: space-between;
+    /* por defecto bootstrap el padding es de 2rem y se lo saco*/
+    padding-left: 0;
+}
+
+.categorias ul > li{
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+}
 
 
 /* FORO LECTURA */
