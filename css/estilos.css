@@ -108,6 +108,7 @@ a{
 .sale{
     margin-top: 30px;
     background-color: var(--color-gris25);
+    border-radius: 0 25px 0 25px;
 }
 
 .sale > h1{
@@ -164,6 +165,7 @@ a{
     border-radius: 0 25px 0 25px;
     background-color: #00a092;
 }
+
 
 
 
