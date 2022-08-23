@@ -10,54 +10,42 @@
 </head>
 <body>
 
-<!-- ESTRUCTURA BASE
-** los colores son referenciales
- -->
 
+<!------------------------------------------------ HEADER ------------------------------------------------>
 
-
-
-
-
-<!-- <header class="container-fluid bg-danger">
-    <div class="container bg-primary"> -->
-        <nav class="navbar navbar-expand-lg container-fluid">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/logo_bizary.png" alt="Brizary, tu libreria Online"></a>  
-                
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>  
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">  
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Catálogo</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Novedades</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Ofertas</a>
-                        </li> 
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Foro</a>
-                        </li>  
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Ayuda</a>
-                        </li>  
-                    </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search" size="10">
-                        <button class="btn btn-outline-success" type="submit"><img class="buscar" src="icon/icon_buscar.svg" alt=""></button>
-                    </form>
-                </div>
+<header>
+    <nav class="navbar navbar-expand-lg container-fluid">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/logo_bizary.png" alt="Brizary, tu libreria Online"></a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>  
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">  
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Catálogo</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Novedades</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Ofertas</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Foro</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Ayuda</a>
+                    </li>  
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search" size="10">
+                    <button class="btn btn-outline-success" type="submit"><img class="buscar" src="icon/icon_buscar.svg" alt=""></button>
+                </form>
             </div>
-        </nav>
-
-
-    <!-- </div>
-</header> -->
+        </div>
+    </nav>
+</header>
 
 
 
@@ -105,17 +93,18 @@
         <!----------------------------- RECOMENDACIONES ----------------------------->
         <section class="recomendados container">
             <H1 class="titulo_verde">Te recomendamos estos librazos ;)</H1>
-            <div class="container">
-                <div class="row mt-3">
-                    <div class="col recomendados_cartas"><img src="img/carta1.jpg" alt=""></div>
-                    <div class="col recomendados_cartas"><img src="img/carta1.jpg" alt=""></div>
-                    <div class="col recomendados_cartas"><img src="img/carta1.jpg" alt=""></div>
-                    <div class="col recomendados_cartas"><img src="img/carta1.jpg" alt=""></div>
-                    <div class="col recomendados_cartas"><img src="img/carta1.jpg" alt=""></div>
-
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col recomendados_cartas p-0"><img src="img/carta1.jpg" alt=""></div>
+                    <div class="col recomendados_cartas p-0"><img src="img/carta1.jpg" alt=""></div>
+                    <div class="col recomendados_cartas p-0"><img src="img/carta1.jpg" alt=""></div>
+                    <div class="col recomendados_cartas p-0"><img src="img/carta1.jpg" alt=""></div>
+                    <div class="col recomendados_cartas p-0"><img src="img/carta1.jpg" alt=""></div>
                 </div>
             </div>
         </section>
+
+        <!-- RESOLVER: NO PUEDO CENTRAR EL CONTENEDOR DE LAS CARTAS NI QUITAR EL PADDING -->
 
 
 
@@ -125,7 +114,7 @@
             <div class="row">
                 <article class="col-6 sale_titulos"> <!-- Referencia al texto - izquierda -->
                     <H1 class="titulo_extrabold">SALE AGOSTO</H1>
-                    <H3>20% en manga y comics seleccionados</H3>
+                    <H3 class="subtitulo_gris">20% en manga y comics seleccionados</H3>
                     <a class="lo_quiero" href="#">¡Lo quiero</a>
                 </article>
     
@@ -165,10 +154,24 @@
         <!----------------------------- ICONOS ----------------------------->
         <section class="condiciones_pago_envio container-fluid">
             <div class="container iconos">
-                    <h5>¿Cómo comprar?</h5>
-                    <h5>Envíos</h5>
-                    <h5>Medios de Pago</h5>
-                    <h5>Promociones Bancarias</h5>
+                <div class="row">
+                    <div class="col">
+                        <img src="img/icono_comprar.png" alt="">
+                        <h5>¿Cómo comprar?</h5>
+                    </div>
+                    <div class="col">
+                        <img src="img/icono_comprar.png" alt="">
+                        <h5>Envíos</h5>
+                    </div>
+                    <div class="col">
+                        <img src="img/icono_comprar.png" alt="">
+                        <h5>Medios de Pago</h5>
+                    </div>
+                    <div class="col">
+                        <img src="img/icono_comprar.png" alt="">
+                        <h5>Promos Bancarias</h5>
+                    </div>
+                </div>
             </div>
         </section>
 
