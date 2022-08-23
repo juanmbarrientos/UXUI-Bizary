@@ -100,6 +100,10 @@ a{
     color: var(--color-verdeAgua);
 }
 
+.navbar-brand > img{
+    height: 35px;
+}
+
 .buscar{
     width: 20px;
 }
