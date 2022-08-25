@@ -27,7 +27,7 @@ body{
     /* -------------------------------------------------------------------------------------- */
 
 
-    /* -------------------------------- Definición de estilos de titulos y tipos de letras -------------------------------- */
+    /* -------------------------------- Definición de estilos de titulos en el body -------------------------------- */
 
 .titulo_extrabold{
     font-size: 48px;
@@ -71,6 +71,30 @@ body{
 
 
 
+    /* -------------------------------- Definición de nombres de libros y precios -------------------------------- */
+
+.titulos_libros{
+    padding-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-gris50);
+}
+
+.precio_real{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-verdeAgua);
+    text-decoration: line-through;
+}
+
+.precio_descuento{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-gris50);
+}
+
+
+
     /* -------------------------------- UL / LI / A -------------------------------- */
 
 ul{
@@ -90,7 +114,7 @@ a{
 
 
 
-    /* -------------------------------- Transform en imagenes -------------------------------- */
+    /* -------------------------------- Transform -------------------------------- */
 
 .transform_img:hover{
     transform: scale(1.015);
@@ -98,8 +122,6 @@ a{
     transition-timing-function: ease-in-out;
 
 }
-
-
 
 
 
@@ -187,9 +209,17 @@ main{
     text-align: center;
 }
 
+.recomendados_cartas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
 .recomendados_cartas > img{
     max-width: 90%;
     border-radius: 10px;
+    margin: auto;
 }
 
 
@@ -224,6 +254,13 @@ main{
 .img_sale{
     max-width: 90%;
     border-radius: 10px;
+    margin: auto;
+}
+
+.libro_sale{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 
@@ -241,6 +278,11 @@ main{
     justify-content: space-between;
 }
 
+.col_ofertazas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 
 
     /* -------------------------------------------------------------------------------------- */
@@ -302,7 +344,7 @@ main{
     padding: 20px;
     border-radius: 0 25px 0 25px;
     background-color:#7c358a;
-    height: 250px;
+    /* height: 250px; */
 }
 
 .foro1 h6{
@@ -316,7 +358,7 @@ main{
     padding: 20px;
     border-radius: 0 25px 0 25px;
     background-color: #00a092;
-    height: 250px;
+    /* height: 250px; */
 }
 
 .foro2 h6{
