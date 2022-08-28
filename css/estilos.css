@@ -27,72 +27,35 @@ body{
     /* -------------------------------------------------------------------------------------- */
 
 
-    /* -------------------------------- Definición de estilos de titulos en el body -------------------------------- */
+/* fuentes generales - titulos y subtitulos */
+.verde_40_700{font-size: 48px; font-weight: 700; color: var(--color-verdeAgua);}
+.verde_30_600{font-size: 30px; font-weight: 600; color: var(--color-verdeAgua);}
+.gris_30_600{font-size: 30px; font-weight: 600; color: var(--color-gris50);}
+.gris_24_600{font-size: 24px; font-weight: 600; color: var(--color-gris50);}
+.blanco_24_600{font-size: 24px; font-weight: 600; color: white;}
+.blanco_18_600{font-size: 18px; font-weight: 600; color: white;}
+.arrepentimiento{color: var(--color-mostaza);}
 
-.titulo_extrabold{
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--color-verdeAgua);
-}
+/* fuentes de comentarios de usuarios */
+.lila_16_600{font-size: 16px; font-weight: 600; color: var(--color-lila);}
+.gris_14_600{font-size: 14px; font-weight: 600; color: var(--color-gris50);}
 
-.titulo_verde{
-    font-size: 36px;
-    font-weight: 600;
-    color: var(--color-verdeAgua);
-}
+/* libros y precios */
+.titulos_libros{padding-top: 8px; font-size: 16px; font-weight: 600; color: var(--color-gris50);}
+.precio_real{font-size: 14px; font-weight: 600; color: var(--color-verdeAgua); text-decoration: line-through;}
+.precio_descuento{font-size: 20px; font-weight: 600; color: var(--color-gris50);}
 
-.titulo_gris{
-    font-size: 36px;
-    font-weight: 600;
-    color: var(--color-gris50);
-}
-
-.subtitulo_gris{
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--color-gris50);
-}
-
-.subtitulo_blanco{
-    font-size: 24px;
-    font-weight: 600;
-    color: white;
-}
-
-.titulos_footer{
-    font-size: 18px;
-    font-weight: 600;
-    color: white;
-}
-
-.arrepentimiento{
-    color: var(--color-mostaza);
-}
-
-
-
-    /* -------------------------------- Definición de nombres de libros y precios -------------------------------- */
-
-.titulos_libros{
-    padding-top: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    color: var(--color-gris50);
-}
-
-.precio_real{
-    font-size: 14px;
-    font-weight: 600;
-    color: var(--color-verdeAgua);
-    text-decoration: line-through;
-}
-
-.precio_descuento{
+.titulo_libro_sinopsis{
     font-size: 20px;
-    font-weight: 600;
-    color: var(--color-gris50);
+    font-weight: 800;
+    color: var(--color-lila);
 }
 
+.gris_14{font-size: 14px; color: var(--color-gris50);}
+
+.libro_sinopsis{
+    font-size: 14px;
+}
 
 
     /* -------------------------------- UL / LI / A -------------------------------- */
@@ -138,12 +101,12 @@ header{
 }
 
 .nav-item > a:hover{
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-lila);
 }
 
 .nav-item > a:active{
-    font-weight: 700;
+    font-weight: 600;
     color: var(--color-verdeAgua);
 }
 
@@ -320,6 +283,7 @@ main{
 }
 
 .categorias .col{
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,8 +291,10 @@ main{
     width: 50px;
     height: 100px;
     border-radius: 12.5px;
-    box-shadow: 0px 0px 12px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 5px 1px var(--color-lila);
 }
+
+
 
 
 
@@ -380,7 +346,7 @@ main{
 
 footer{
     margin-top: 2rem;
-    padding: 40px 0px 10px;
+    padding: 20px 0px 10px;
     background-color: var(--color-gris50);
     color: white;
     font-size: 1rem;
@@ -416,9 +382,22 @@ footer h6{
     flex-direction: column;
 }
 
+.redes-sociales img{
+    width: 20px;
+}
+
+.redes-sociales a{
+    padding: 0px 10px;
+}
+
 .derechos_reservados{
-    padding-top: 40px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     color: white;
+}
+
+.navbar-img img{
+    width: 35px;
+    margin-left:10px;
 }
