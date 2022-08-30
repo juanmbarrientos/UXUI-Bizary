@@ -28,7 +28,7 @@ body{
 
 
 /* fuentes generales - titulos y subtitulos */
-.verde_40_700{font-size: 48px; font-weight: 700; color: var(--color-verdeAgua);}
+.verde_40_700{font-size: 40px; font-weight: 700; color: var(--color-verdeAgua);}
 .verde_30_600{font-size: 30px; font-weight: 600; color: var(--color-verdeAgua);}
 .gris_30_600{font-size: 30px; font-weight: 600; color: var(--color-gris50);}
 .gris_24_600{font-size: 24px; font-weight: 600; color: var(--color-gris50);}
@@ -115,9 +115,14 @@ header{
 }
 
 .buscar{
-    width: 20px;
+    width: 15px;
+    height: 15px;
 }
 
+.btn-buscador{
+    background-color: var(--color-verdeAgua) !important;
+    border: 0 !important;
+}
 
 
     /* -------------------------------------------------------------------------------------- */
@@ -146,6 +151,11 @@ main{
 
 .novedades{
     margin-top: 30px;
+}
+
+.img-comiccon{
+    display: flex;
+    justify-content: center;
 }
 
 .novedades > h1{
@@ -205,8 +215,15 @@ main{
 }
 
 .lo_quiero{
-    padding: 14px;
-    background-color: red;
+    padding: 6px 10px;
+    background-color: var(--color-lila);
+    color: #e9e9e9;
+    display: inline;
+    border-radius: 10px;
+}
+
+.sale_titulos a{
+    text-decoration: none;
 }
 
 .sale_libros{
@@ -256,6 +273,7 @@ main{
     background-color: var(--color-gris25);
     margin: 30px;
     padding: 20px 0;
+    border-radius: 0 25px 0 25px;
 }
 
 .condiciones_pago_envio img{
@@ -296,8 +314,6 @@ main{
 
 
 
-
-
     /* -------------------------------------------------------------------------------------- */
     /* -------------------------------- FORO + LECTURA -------------------------------- */
     /* -------------------------------------------------------------------------------------- */
@@ -309,7 +325,7 @@ main{
 .foro1{
     padding: 20px;
     border-radius: 0 25px 0 25px;
-    background-color:#7c358a;
+    background-color:var(--color-lila);
     /* height: 250px; */
 }
 
@@ -318,13 +334,15 @@ main{
     background-color: white;
     border-radius: 10px;
     text-align: center;
+    text-decoration: none;
 }
+
 
 .foro2{
     padding: 20px;
     border-radius: 0 25px 0 25px;
     background-color: #00a092;
-    /* height: 250px; */
+    height: 250px;
 }
 
 .foro2 h6{
@@ -401,3 +419,4 @@ footer h6{
     width: 35px;
     margin-left:10px;
 }
+
