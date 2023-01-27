@@ -7,23 +7,8 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Bizary | Tu libreria</title>
-
-    
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QV3FRM3NRX"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-QV3FRM3NRX');
-    </script>
-
 </head>
 <body>
-
-
-<!------------------------------------------------ HEADER ------------------------------------------------>
 <header class="fixed-top">
     <nav class="navbar navbar-expand-lg container-fluid p-2">
         <div class="container">
@@ -34,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">  
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="harry_potter.html">Catálogo</a>
+                        <a class="nav-link" aria-current="page" href="#">Catálogo</a>
                     </li> 
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Novedades</a>
@@ -49,22 +34,19 @@
                         <a class="nav-link" aria-current="page" href="#">Ayuda</a>
                     </li>  
                 </ul>
-                <form class="d-flex me-1" role="search">
-                    <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search" size="10">
+                <form class="buscador_icons" role="search">
+                    <input class="form-control input_buscador" type="search" placeholder="Buscar libro..." aria-label="Search" size="10">
                     <button class="btn btn-outline-success btn-buscador" type="submit"><img class="buscar" src="img/buscador.png" alt=""></button>
+                    <div class="navbar_icons">
+                        <img class="navbar_carrito" src="img/carrito.png" alt="">
+                        <img class="navbar_user" src="img/usuario.png" alt="">
+                    </div>
                 </form>
-                <div class="navbar-img">
-                    <img src="img/carrito.png" alt="">
-                    <img src="img/usuario.png" alt="">
-                </div>
             </div>
         </div>
     </nav>
 </header>
-
-
-
-<!----------------------------- BANNER ----------------------------->
+<!-- Banner -->
 <section class="banner">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">  
         <div class="carousel-indicators">
@@ -87,71 +69,66 @@
         </button> 
     </div>
 </section>
-
-
-
-<!------------------------------------------------ MAIN ------------------------------------------------>
+<!-- Main -->
 <main role="main container-fluid">
 
-
-
-        <!----------------------------- NOVEDADES ----------------------------->        
+        <!-- Novedades -->
         <section class="novedades container">
             <h1 class="gris_30_600">Novedades</h1>
             <div class="container img-comiccon">
-                <img src="img/comiccon.png" alt="">
+                <img class="img-fluid" src="img/comiccon.png" alt="">
             </div>
         </section>
 
-
-
-        <!----------------------------- RECOMENDACIONES ----------------------------->
+        <!-- Recomendaciones -->
         <section class="recomendados container">
             <H1 class="verde_30_600">Te recomendamos estos librazos ;)</H1>
-            <div class="container mt-3">
                 <div class="row">
-                    <div class="col recomendados_cartas p-0 transform_img">
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
                         <img src="img/camino.png" alt="El Camino de los Reyes">
                         <h6 class="titulo_libros">El Camino de los Reyes</h6>
                         <h6 class="precio_descuento">$6.499</h6>
                     </div>
-                    <div class="col recomendados_cartas p-0 transform_img">
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
                         <img src="img/eragon.png" alt="Eragon">
                         <h6 class="titulo_libros">Eragon - C. Paolini</h6>
                         <h6 class="precio_descuento">$4.499</h6>
                     </div>
-                    <div class="col recomendados_cartas p-0 transform_img">
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
                         <img src="img/medialuna.png" alt="Ciudad Medialuna">
                         <h6 class="titulo_libros">Ciudad Medialuna</h6>
                         <h6 class="precio_descuento">$7.899</h6>
                     </div>
-                    <div class="col recomendados_cartas p-0 transform_img">
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
                         <img src="img/tronos.png" alt="Juego de Tronos">
                         <h6 class="titulo_libros">Juego de Tronos</h6>
                         <h6 class="precio_descuento">$7.299</h6>
                     </div>
-                    <div class="col recomendados_cartas p-0 transform_img">
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
                         <img src="img/esquirla.jpg" alt="Esquirla del Amanecer">
                         <h6 class="titulo_libros">Esquirla del Amanecer</h6>
                         <h6 class="precio_descuento">$3.250</h6>
                     </div>
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
+                        <a href="harry_potter.html" target="_parent">
+                            <img src="img/libro_harry.jpg" alt="Esquirla del Amanecer">
+                            <h6 class="titulo_libros">Harry Potter</h6>
+                            <h6 class="precio_descuento">$9.250</h6>
+                        </a>
+                    </div>
                 </div>
-            </div>
         </section>
 
-
-        
-        <!----------------------------- SALE AGOSTO ----------------------------->
+        <!-- Sale Agosto -->
         <section class="sale container">
-           
             <div class="row">
-                <article class="col-6 sale_titulos"> <!-- Referencia al texto - izquierda -->
+                <article class="col col-12 col-md-6 sale_titulos"> <!-- Referencia al texto - izquierda -->
                     <H1 class="verde_40_700">SALE AGOSTO</H1>
                     <H3 class="gris_24_600">20% en manga y comics seleccionados</H3>
-                    <a href=""><h6 class="lo_quiero mt-5">¡Lo quiero</h6></a>
+                    <a href=""><h6 class="btn btn-primary lo_quiero">¡Quiero ver más!</h6></a>
                 </article>
     
-                <article class="col-6 sale_libros"> <!-- Referencia a los libros - derecha -->
+                <article class="col col-12 col-md-6 sale_libros"> <!-- Referencia a los libros - derecha -->
                     <div class="col libro_sale transform_img">
                         <img class="img_sale" src="img/naruto.png" alt="Naruto 01">
                         <h6 class="titulos_libros">Naruto 01</h6>
@@ -172,51 +149,49 @@
                     </div>
                 </article>
             </div>
-            
         </section>
-        
 
-
-        <!----------------------------- MÁS OFERTAZAS ----------------------------->
+        <!-- Mas ofertazas -->
         <section class="ofertazas container">
-            <div class="row">
+
+            <div class="titulo_ofertaza">
                 <H1 class="gris_30_600">¡Tenemos más Ofertazas!</H1>
-                <a href="#">Ver todo</a>
+                <a href="#" class="ver_todo">Ver todo</a>
             </div>
             
             <div class="row">
-                <article class="col sale_libros"> <!-- Referencia a los libros - derecha -->
-                    <div class="col col_ofertazas transform_img">
+                <article class="row sale_libros">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/tolkien.png" alt="Beren y Lúthien">
                         <h6 class="titulos_libros">Beren y Lúthien</h6>
                         <h6 class="precio_descuento">$2.999</h6>
                         <h6 class="precio_real">$3.299</h6>
                     </div>
-                    <div class="col col_ofertazas transform_img">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/kaisen.png" alt="Jujutsu Kaisen 01">
                         <h6 class="titulos_libros">Jujutsu Kaisen 01</h6>
                         <h6 class="precio_descuento">$1.250</h6>
                         <h6 class="precio_real">$1.850</h6>
                     </div>
-                    <div class="col col_ofertazas transform_img">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/batman.png" alt="La broma Asesina">
                         <h6 class="titulos_libros">La broma Asesina</h6>
                         <h6 class="precio_descuento">$3.520</h6>
                         <h6 class="precio_real">$4.150</h6>
                     </div>
-                    <div class="col col_ofertazas transform_img">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/rueda.png" alt="La Rueda del Tiempo">
                         <h6 class="titulos_libros">La Rueda del Tiempo</h6>
                         <h6 class="precio_descuento">$3.599</h6>
                         <h6 class="precio_real">$4.299</h6>
                     </div>
-                    <div class="col col_ofertazas transform_img">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/imperio.png" alt="El Imperio Final">
                         <h6 class="titulos_libros">El Imperio Final</h6>
                         <h6 class="precio_descuento">$6.999</h6>
                         <h6 class="precio_real">$7.399</h6>
                     </div>
-                    <div class="col col_ofertazas transform_img">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/civilwar.png" alt="Civil War">
                         <h6 class="titulos_libros">Civil War</h6>
                         <h6 class="precio_descuento">$1.199</h6>
@@ -226,17 +201,15 @@
             </div>
         </section>
 
-
-
-        <!----------------------------- ICONOS ----------------------------->
+        <!-- Iconos -->
         <section class="condiciones_pago_envio container">
             <div class="container iconos">
                 <div class="row">
-                    <div class="col col-md-3 col-sm-6 col-6">
+                    <div class="col col-md-3 col-sm-6 col-6 col_responsive">
                         <img src="img/como_comprar.png" alt="">
                         <h6 class="mb-0">¿Cómo comprar?</h6>
                     </div>
-                    <div class="col col-md-3 col-sm-6 col-6">
+                    <div class="col col-md-3 col-sm-6 col-6 col_responsive">
                         <img src="img/envios.png" alt="">
                         <h6 class="mb-0">Envíos</6>
                     </div>
@@ -252,59 +225,49 @@
             </div>
         </section>
 
-
-
-        <!----------------------------- CATEGORIAS ----------------------------->
+        <!-- Categorias -->
         <section class="categorias container">
             <div class="row">
-                <div class="col">
-                    <h6>Manga</h6>
+                <div class="col col-4 col-md-2">
+                    <a href=""><h6 class="items_categorias">Manga</h6></a>
                 </div>
-                <div class="col">
-                    <h6>Comic</h6>
+                <div class="col col-4 col-md-2">
+                    <a href=""><h6 class="items_categorias">Comic</h6></a>
                 </div>
-                <div class="col">
-                    <h6>Aventura</h6>
+                <div class="col col-4 col-md-2">
+                    <a href=""><h6 class="items_categorias">Aventura</h6></a>
                 </div>
-                <div class="col">
-                    <h6>Fantasia</h6>
+                <div class="col col-4 col-md-2">
+                    <a href=""><h6 class="items_categorias">Fantasia</h6></a>
                 </div>
-                <div class="col">
-                    <h6>Ciencia Ficción</h6>
+                <div class="col col-4 col-md-2">
+                    <a href=""><h6 class="items_categorias">C.  Ficción</h6></a>
                 </div>
-                <div class="col">
-                    <h6>Romance</h6>
+                <div class="col col-4 col-md-2">
+                    <a href=""><h6 class="items_categorias">Romance</h6></a>
                 </div>
             </div>
         </section>
 
-
-
-        <!----------------------------- FORO + LECTURAS ----------------------------->
-        <section class="foro_lecturas container">
-            <div class="row px-4">
-                <article class="foro1 col-6"> <!-- Referencia al cuadro izquierdo -->
+        <section class="container foro_lecturas">
+            <div class="row">
+                <div class="col col-12 col-md-6 foro1">
                     <h1 class="blanco_24_600">Foro</h1>
-                    <div>
-                        <h6>Me recomiendan un libro para salir del bloqueo lector</h6>
-                        <h6>Recomendación: Mistborn de Brandon Sanderson</h6>
-                        <h6>Me ayudan a encontrar este libro?</h6>
-                    </div>
-                </article>
-    
-                <article class="foro2 col-6"> <!-- Referencia al cuado derecho -->
+                    <h6>Me recomiendan un libro para salir del bloqueo lector</h6>
+                    <h6>Recomendación: Mistborn de Brandon Sanderson</h6>
+                    <h6>Me ayudan a encontrar este libro?</h6>
+                </div>
+
+                <div class="col col-12 col-md-6 foro2">
                     <h1 class="blanco_24_600">¿Te gustaria compartir tus lecturas con otros lectores en Nuestro Foro?</h1>
-                    <div>
-                        <h6 class="mt-3">¡Quiero sumarme!</h6>
-                    </div>
-                </article>
+                    <input type="text" class="form-control" name="" id="" placeholder="Dejanos tu eMail">
+                    <h6 class="btn btn-primary quiero_sumarme mt-3">¡Quiero sumarme!</h6>
+                </div>
             </div>
         </section>
     </main>
     
-
-
-<!------------------------------------------------ FOOTER ------------------------------------------------>
+    <!-- Footer -->
     <footer class="container-fluid">
         <div class="container">
             <div class="row">
@@ -341,9 +304,6 @@
             </div>
         </div>
     </footer>
-
-
-
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

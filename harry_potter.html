@@ -9,9 +9,6 @@
     <title>Bizary | Tu libreria</title>
 </head>
 <body>
-
-
-<!------------------------------------------------ HEADER ------------------------------------------------>
 <header class="fixed-top">
     <nav class="navbar navbar-expand-lg container-fluid p-2">
         <div class="container">
@@ -22,7 +19,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">  
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="harry_potter.html">Catálogo</a>
+                        <a class="nav-link" aria-current="page" href="#">Catálogo</a>
                     </li> 
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#">Novedades</a>
@@ -37,153 +34,142 @@
                         <a class="nav-link" aria-current="page" href="#">Ayuda</a>
                     </li>  
                 </ul>
-                <form class="d-flex me-1" role="search">
-                    <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search" size="10">
+                <form class="buscador_icons" role="search">
+                    <input class="form-control input_buscador" type="search" placeholder="Buscar libro..." aria-label="Search" size="10">
                     <button class="btn btn-outline-success btn-buscador" type="submit"><img class="buscar" src="img/buscador.png" alt=""></button>
+                    <div class="navbar_icons">
+                        <img class="navbar_carrito" src="img/carrito.png" alt="">
+                        <img class="navbar_user" src="img/usuario.png" alt="">
+                    </div>
                 </form>
-                <div class="navbar-img">
-                    <img src="img/carrito.png" alt="">
-                    <img src="img/usuario.png" alt="">
-                </div>
             </div>
         </div>
     </nav>
 </header>
+<!-- main -->
+<main role="main container-fluid">
 
-
-
-<!------------------------------------------------ MAIN ------------------------------------------------>
-    <main role="main container-fluid">
-
-
-
-
-        <!----------------------------- NOVEDADES ----------------------------->
-        
+        <!-- Novedades -->
         <section class="section_libro container px-3">
             <div class="row">
-                <div class="col col-4">
-                    <img src="img/libro_harry.jpg" class="img-fluid transform_img" alt="Harry Potter">
+                <div class="col col-12 col-md-4">
+                    <img src="img/libro_harry.jpg" class="img-fluid transform_img rounded" alt="Harry Potter">
                 </div>
 
-                <div class="col col-8 px-5">
+                <div class="col col-12 col-md-8 container_sinopsis">
                     <h1 class="verde_30_600">Harry Potter y la piedra filosofal</h1>
                     <h6 class="gris_24_600">J. K. Rowling</h6>
 
                     <h6 class="titulo_libro_sinopsis">Sinopsis</h6>
-                    <p class="gris_14">Harry Potter se ha quedado huérfano y vive en casa de sus abominables tíos y del insoportable primo Dudley. Se siente muy triste y solo, hasta que un buen día recibe una carta que cambiará su vida para siempre. En ella le comunican que ha sido aceptado como alumno en el colegio interno Hogwarts de magia y hechicería.
-
-                    A partir de ese momento, la suerte de Harry da un vuelco espectacular. En esa escuela tan especial aprenderá encantamientos, trucos fabulosos y tácticas de defensa contra las malas artes. Se convertirá en el campeón escolar de quidditch, especie de fútbol aéreo que se juega montado sobre escobas, y hará un puñado de buenos amigos... aunque también algunos temibles enemigos. Pero, sobre todo, conocerá los secretos que le permitirán cumplir con su destino. Pues, aunque no lo parezca a primera vista, Harry no es un chico común y corriente. ¡Es un verdadero mago!
+                    <p class="gris_14">El día de su cumpleaños, Harry Potter descubre que es hijo de dos conocidos hechiceros, de los que ha heredado poderes mágicos. Debe asistir a una famosa escuela de magia y hechicería, donde entabla una amistad con dos jóvenes que se convertirán en sus compañeros de aventura. Durante su primer año en Hogwarts, descubre que un malévolo y poderoso mago llamado Voldemort está en busca de una piedra filosofal que alarga la vida de quien la posee.
                     </p>
 
                     <h6 class="titulo_libro_sinopsis">Detalles</h6>
-                    <p class="gris_14">Formato: Tapa Blanda <br>
-                        Nº de páginas: 288 <br>
-                        Dimensiones: 19 x 12.5 cm <br>
-                        Editorial: Salamandra Bolsillo <br>
-                        Idioma: Español <br>
-                        ISBN: 9789878000107 <br>
-                        Género: Fantasía Juvenil</p>
+                    <p class="gris_14">
+                        <b>Formato:</b> Tapa Blanda <br>
+                        <b>Nº de páginas:</b> 288 <br>
+                        <b>Dimensiones:</b> 19 x 12.5 cm <br>
+                        <b>Editorial:</b> Salamandra Bolsillo <br>
+                        <b>Idioma:</b> Español <br>
+                        <b>ISBN:</b> 9789878000107 <br>
+                        <b>Género:</b> Fantasía Juvenil</p>
                 </div>
             </div>
         </section>
 
-
-
-        <!----------------------------- RECOMENDACIONES ----------------------------->
+        <!-- Recomendaciones -->
         <section class="recomendados container">
-            <H1 class="verde_30_600">Te recomendamos estos librazos ;)</H1>
+            <H1 class="verde_30_600">También, te recomendamos estos librazos ;)</H1>
             <div class="container mt-3">
                 <div class="row">
-                    <div class="col recomendados_cartas p-0 transform_img">
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
                         <img src="img/camino.png" alt="El Camino de los Reyes">
                         <h6 class="titulo_libros">El Camino de los Reyes</h6>
                         <h6 class="precio_descuento">$6.499</h6>
                     </div>
-                    <div class="col recomendados_cartas p-0 transform_img">
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
                         <img src="img/eragon.png" alt="Eragon">
                         <h6 class="titulo_libros">Eragon - C. Paolini</h6>
                         <h6 class="precio_descuento">$4.499</h6>
                     </div>
-                    <div class="col recomendados_cartas p-0 transform_img">
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
                         <img src="img/medialuna.png" alt="Ciudad Medialuna">
                         <h6 class="titulo_libros">Ciudad Medialuna</h6>
                         <h6 class="precio_descuento">$7.899</h6>
                     </div>
-                    <div class="col recomendados_cartas p-0 transform_img">
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
                         <img src="img/tronos.png" alt="Juego de Tronos">
                         <h6 class="titulo_libros">Juego de Tronos</h6>
                         <h6 class="precio_descuento">$7.299</h6>
                     </div>
-                    <div class="col recomendados_cartas p-0 transform_img">
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
                         <img src="img/esquirla.jpg" alt="Esquirla del Amanecer">
                         <h6 class="titulo_libros">Esquirla del Amanecer</h6>
                         <h6 class="precio_descuento">$3.250</h6>
                     </div>
+                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
+                        <img src="img/libro_harry.jpg" alt="Esquirla del Amanecer">
+                        <h6 class="titulo_libros">Harry Potter</h6>
+                        <h6 class="precio_descuento">$9.250</h6>
+                    </div>
                 </div>
             </div>
         </section>
-
-
         
-        <!----------------------------- MÁS OFERTAZAS ----------------------------->
+        <!-- Mas ofertas -->
         <section class="ofertazas container">
-            <div class="row">
-                <H1 class="gris_30_600">¡Tenemos mas Ofertazas!</H1>
-                <a href="#">Ver todo</a>
+            <div class="titulo_ofertaza">
+                <H1 class="gris_30_600">¡Tenemos más Ofertazas!</H1>
+                <a href="#" class="ver_todo">Ver todo</a>
             </div>
             
-            
-            <div class="row">
-                <article class="col sale_libros"> <!-- Referencia a los libros - derecha -->
-                    <div class="col col_ofertazas transform_img">
+            <!-- <div class="row"> -->
+                <article class="row sale_libros">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/tolkien.png" alt="Beren y Lúthien">
                         <h6 class="titulos_libros">Beren y Lúthien</h6>
                         <h6 class="precio_descuento">$2.999</h6>
                         <h6 class="precio_real">$3.299</h6>
                     </div>
-                    <div class="col col_ofertazas transform_img">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/kaisen.png" alt="Jujutsu Kaisen 01">
                         <h6 class="titulos_libros">Jujutsu Kaisen 01</h6>
                         <h6 class="precio_descuento">$1.250</h6>
                         <h6 class="precio_real">$1.850</h6>
                     </div>
-                    <div class="col col_ofertazas transform_img">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/vendeta.png" alt="V de Vendeta">
                         <h6 class="titulos_libros">V de Vendeta</h6>
                         <h6 class="precio_descuento">$3.520</h6>
                         <h6 class="precio_real">$4.150</h6>
                     </div>
-                    <div class="col col_ofertazas transform_img">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/rueda.png" alt="La Rueda del Tiempo">
                         <h6 class="titulos_libros">La Rueda del Tiempo</h6>
                         <h6 class="precio_descuento">$3.599</h6>
                         <h6 class="precio_real">$4.299</h6>
                     </div>
-                    <div class="col col_ofertazas transform_img">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/imperio.png" alt="El Imperio Final">
                         <h6 class="titulos_libros">El Imperio Final</h6>
                         <h6 class="precio_descuento">$6.999</h6>
                         <h6 class="precio_real">$7.399</h6>
                     </div>
-                    <div class="col col_ofertazas transform_img">
+                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
                         <img class="img_sale" src="img/civilwar.png" alt="Civil War">
                         <h6 class="titulos_libros">Civil War</h6>
                         <h6 class="precio_descuento">$1.199</h6>
                         <h6 class="precio_real">$1.999</h6>
                     </div>
-                </article>
+                <!-- </article> -->
             </div>
 
         </section>
-
-
-
-        <!----------------------------- FORO + LECTURAS ----------------------------->
+        
         <section class="foro_lecturas container">
             <div class="row px-4">
-                <article class="col-6"> <!-- Referencia al cuadro izquierdo -->
-                    <h1 class="gris_30_600">Lo que opinan los lectores:</h1>
+                <article class="col col-12 col-md-6 foro3"> 
+                    <h1 class="gris_24_600">Lo que opinan los lectores:</h1>
                     <div>
                         <h6 class="lila_16_600 mb-1">Amelia98</h6>
                         <h6 class="gris_14_600 mb-1">Libro: El Imperio Final</h6>
@@ -201,19 +187,16 @@
                     </div>
                 </article>
     
-                <article class="foro2 col-6"> <!-- Referencia al cuado derecho -->
+                <div class="col col-12 col-md-6 foro2">
                     <h1 class="blanco_24_600">¿Te gustaria compartir tus lecturas con otros lectores en Nuestro Foro?</h1>
-                    <div>
-                        <h6 class="mt-3">¡Quiero sumarme!</h6>
-                    </div>
-                </article>
+                    <input type="text" class="form-control" name="" id="" placeholder="Dejanos tu eMail">
+                    <h6 class="btn btn-primary quiero_sumarme mt-3">¡Quiero sumarme!</h6>
+                </div>
             </div>
         </section>
     </main>
     
-
-
-<!------------------------------------------------ FOOTER ------------------------------------------------>
+    <!-- FOOTER -->
     <footer class="container-fluid">
         <div class="container">
             <div class="row">
@@ -249,12 +232,7 @@
                 </div>
             </div>
         </div>
-
-
     </footer>
-
-
-
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
