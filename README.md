@@ -1,2 +1,2 @@
-# bizary
-Trabajo Grupal - Bizary
+# Proyecto Bizary
+Trabajo Grupal para Digit@lers - Educacion IT
