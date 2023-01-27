@@ -1,309 +1,67 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Bizary | Tu libreria</title>
+    <title>Proyecto Bizary Librería</title>
+    <link rel="stylesheet" href="css/estilos_index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<header class="fixed-top">
-    <nav class="navbar navbar-expand-lg container-fluid p-2">
+    <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="img/logo_bizary.png" alt="Brizary, tu libreria Online"></a>  
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>  
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">  
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">  
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Catálogo</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Novedades</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Ofertas</a>
-                    </li> 
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Foro</a>
-                    </li>  
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Ayuda</a>
-                    </li>  
-                </ul>
-                <form class="buscador_icons" role="search">
-                    <input class="form-control input_buscador" type="search" placeholder="Buscar libro..." aria-label="Search" size="10">
-                    <button class="btn btn-outline-success btn-buscador" type="submit"><img class="buscar" src="img/buscador.png" alt=""></button>
-                    <div class="navbar_icons">
-                        <img class="navbar_carrito" src="img/carrito.png" alt="">
-                        <img class="navbar_user" src="img/usuario.png" alt="">
-                    </div>
-                </form>
-            </div>
+            <a class="navbar-brand" href="#">
+                <img src="img/logo_bizary.png" alt="Logo Bizary"  height="24">
+            </a>
         </div>
     </nav>
-</header>
-<!-- Banner -->
-<section class="banner">
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">  
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">  <img src="img/Banner1.jpg" class="d-block w-100" alt="...">  </div>
-            <div class="carousel-item">  <img src="img/Banner2.jpg" class="d-block w-100" alt="...">  </div>  
-            <div class="carousel-item">  <img src="img/Banner3.jpg" class="d-block w-100" alt="...">  </div>  
-        </div>  
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">  
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>  
-            <span class="visually-hidden">Previous</span>  
-        </button>  
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">  
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>  
-            <span class="visually-hidden">Next</span>  
-        </button> 
-    </div>
-</section>
-<!-- Main -->
-<main role="main container-fluid">
 
-        <!-- Novedades -->
-        <section class="novedades container">
-            <h1 class="gris_30_600">Novedades</h1>
-            <div class="container img-comiccon">
-                <img class="img-fluid" src="img/comiccon.png" alt="">
-            </div>
-        </section>
+    <div class="container container_general d-flex justify-content-center mb-3">
+      <div class="form_presentacion">
+        <h1 class="titulos mb-2">Proyecto Bizary - Libreria OnLine para Digit@lers de Educación IT.</h1>
+        <!-- <p class="parrafo mb-2"><b style="color: red;"> Aclaración: Este sitio web </b></p> -->
+        <p class="parrafo mb-2">Este proyecto fue creado y diseñado en grupo junto a 3 participantes del curso de Diseño UX UI. Ellas son Fernanda Juncos Gomez (CBA), Valentina Gimenez (CBA), Melany Menna (BsAs) y yo, Juan Manuel Barrientos (Rosario, Sta Fe), con la enseñanza por Zoom del Profesor Manuel Fernandez (BsAs) para Digit@lers de Educación IT. <br>
+        Se estableció para todos los grupos participantes como base inicial un cliente: "una libreria física que vendia comic, fantasia y libros ciencia ficción, con dos locales en CABA y queria ampliar sus ventas por medio de una e-commerce".</p>
 
-        <!-- Recomendaciones -->
-        <section class="recomendados container">
-            <H1 class="verde_30_600">Te recomendamos estos librazos ;)</H1>
-                <div class="row">
-                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
-                        <img src="img/camino.png" alt="El Camino de los Reyes">
-                        <h6 class="titulo_libros">El Camino de los Reyes</h6>
-                        <h6 class="precio_descuento">$6.499</h6>
-                    </div>
-                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
-                        <img src="img/eragon.png" alt="Eragon">
-                        <h6 class="titulo_libros">Eragon - C. Paolini</h6>
-                        <h6 class="precio_descuento">$4.499</h6>
-                    </div>
-                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
-                        <img src="img/medialuna.png" alt="Ciudad Medialuna">
-                        <h6 class="titulo_libros">Ciudad Medialuna</h6>
-                        <h6 class="precio_descuento">$7.899</h6>
-                    </div>
-                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
-                        <img src="img/tronos.png" alt="Juego de Tronos">
-                        <h6 class="titulo_libros">Juego de Tronos</h6>
-                        <h6 class="precio_descuento">$7.299</h6>
-                    </div>
-                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
-                        <img src="img/esquirla.jpg" alt="Esquirla del Amanecer">
-                        <h6 class="titulo_libros">Esquirla del Amanecer</h6>
-                        <h6 class="precio_descuento">$3.250</h6>
-                    </div>
-                    <div class="col col-4 col-md-2 recomendados_cartas p-0 transform_img">
-                        <a href="harry_potter.html" target="_parent">
-                            <img src="img/libro_harry.jpg" alt="Esquirla del Amanecer">
-                            <h6 class="titulo_libros">Harry Potter</h6>
-                            <h6 class="precio_descuento">$9.250</h6>
-                        </a>
-                    </div>
-                </div>
-        </section>
+        <h2 class="titulos">En términos generales.</h2>
+        <ul>
+            <li>Reuniones y llamadas en Discord grupales para analizar la información.</li>
+            <li>Cumplimos con los tiempos de entregas y presentación en clases demostrando la evolución del proyecto.</li>
+            <li>División de roles y feedback individual y grupal de los resultados obtenidos.</li>
+            <li>Calificación final. <span style="color: green;"><b>Proyecto Aprobado</b></span></li>
+        </ul>
 
-        <!-- Sale Agosto -->
-        <section class="sale container">
-            <div class="row">
-                <article class="col col-12 col-md-6 sale_titulos"> <!-- Referencia al texto - izquierda -->
-                    <H1 class="verde_40_700">SALE AGOSTO</H1>
-                    <H3 class="gris_24_600">20% en manga y comics seleccionados</H3>
-                    <a href=""><h6 class="btn btn-primary lo_quiero">¡Quiero ver más!</h6></a>
-                </article>
-    
-                <article class="col col-12 col-md-6 sale_libros"> <!-- Referencia a los libros - derecha -->
-                    <div class="col libro_sale transform_img">
-                        <img class="img_sale" src="img/naruto.png" alt="Naruto 01">
-                        <h6 class="titulos_libros">Naruto 01</h6>
-                        <h6 class="precio_descuento">$1200</h6>
-                        <h6 class="precio_real">$1.699</h6>
-                    </div>
-                    <div class="col libro_sale transform_img">
-                        <img class="img_sale" src="img/daredevil.png" alt="Daredevil 01">
-                        <h6 class="titulos_libros">Daredevil 01</h6>
-                        <h6 class="precio_descuento">$950</h6>
-                        <h6 class="precio_real">$1299</h6>
-                    </div>
-                    <div class="col libro_sale transform_img">
-                        <img class="img_sale" src="img/akira.png" alt="Akira 01">
-                        <h6 class="titulos_libros">Akira 01</h6>
-                        <h6 class="precio_descuento">$2.999</h6>
-                        <h6 class="precio_real">$3.699</h6>
-                    </div>
-                </article>
-            </div>
-        </section>
+        <h2 class="titulos">Desarrollo 1: Investigación. UX.</h2>
+        <ul>
+            <li>Benchmarking inicial para introducirnos en el tema investigando la competencia.</li>
+            <li>Hicimos encuestas por Google Forms (formularios) y la difundimos por distintas redes sociales.</li>
+            <li>Analizamos los resultados y sectorizamos.</li>
+            <li>Utilizamos Mapa de Empatia para conocer al usuario.</li>
+            <li>Definimos distintos Arquetipos / Proto-personas</li>
+            <li>Basado en el los resultados del punto anterior hicimos un Brainstorming (lluvia de ideas) para comenzar a tener una primera idea visual del diseño, nombre y colores a utilizar.</li>
+        </ul>
 
-        <!-- Mas ofertazas -->
-        <section class="ofertazas container">
+        <h2 class="titulos">Desarrollo 2: Visual y Producción. UI.</h2>
+        <ul>
+            <li>Mediante el uso de Miro colocamos las ideas esenciales que debia tener la página.</li>
+            <li>Definimos tono y voz de la Marca.</li>
+            <li>Realizamos el User Flow para dar con el primer esquema de navegación del sitio que imaginamos.</li>
+            <li>Los cuatro participantes establecimos un tiempo para presentar un primer wireframe en baja calidad al que luego debatimos en una reunión virtual y utilizamos fragmentos de cada uno de los diseños que nos parecia cumplir con los requisitos iniciales, además de los principios de usabilidad y accesibildad.</li>
+            <li>Presentamos un wireframe en alta calidad, hicimos correcciones y comenzamos a desarrollar el sitio utilizando solamente HTML y CSS ya que constaba en mostrar una parte del modelo terminado y no su funcionabilidad.</li>
+            <li>Utilizamos GitHub para subir la evolución del sitio y luego convertirla a Page.</li>
+        </ul>
+        <h2 class="titulos">Desarrollo 3: Otras características</h2>
+        <ul>
+            <li>Se utilizó Bootstrap.</li>
+            <li>El sitio es Responsive (desktop y móvil)</li>
+            <li>En la categoria "Te recomendamos estos librazos" el libro de Harry Potter tiene un link a la página interna de compra.</li>
+        </ul>
+        <hr>
+        <a class="btn btn-primary btn-proyecto" href="bizary.html" target="_parent">Ir al Proyecto</a>
+      </div>
 
-            <div class="titulo_ofertaza">
-                <H1 class="gris_30_600">¡Tenemos más Ofertazas!</H1>
-                <a href="#" class="ver_todo">Ver todo</a>
-            </div>
-            
-            <div class="row">
-                <article class="row sale_libros">
-                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
-                        <img class="img_sale" src="img/tolkien.png" alt="Beren y Lúthien">
-                        <h6 class="titulos_libros">Beren y Lúthien</h6>
-                        <h6 class="precio_descuento">$2.999</h6>
-                        <h6 class="precio_real">$3.299</h6>
-                    </div>
-                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
-                        <img class="img_sale" src="img/kaisen.png" alt="Jujutsu Kaisen 01">
-                        <h6 class="titulos_libros">Jujutsu Kaisen 01</h6>
-                        <h6 class="precio_descuento">$1.250</h6>
-                        <h6 class="precio_real">$1.850</h6>
-                    </div>
-                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
-                        <img class="img_sale" src="img/batman.png" alt="La broma Asesina">
-                        <h6 class="titulos_libros">La broma Asesina</h6>
-                        <h6 class="precio_descuento">$3.520</h6>
-                        <h6 class="precio_real">$4.150</h6>
-                    </div>
-                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
-                        <img class="img_sale" src="img/rueda.png" alt="La Rueda del Tiempo">
-                        <h6 class="titulos_libros">La Rueda del Tiempo</h6>
-                        <h6 class="precio_descuento">$3.599</h6>
-                        <h6 class="precio_real">$4.299</h6>
-                    </div>
-                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
-                        <img class="img_sale" src="img/imperio.png" alt="El Imperio Final">
-                        <h6 class="titulos_libros">El Imperio Final</h6>
-                        <h6 class="precio_descuento">$6.999</h6>
-                        <h6 class="precio_real">$7.399</h6>
-                    </div>
-                    <div class="col col-4 col-md-2 col_ofertazas transform_img">
-                        <img class="img_sale" src="img/civilwar.png" alt="Civil War">
-                        <h6 class="titulos_libros">Civil War</h6>
-                        <h6 class="precio_descuento">$1.199</h6>
-                        <h6 class="precio_real">$1.999</h6>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Iconos -->
-        <section class="condiciones_pago_envio container">
-            <div class="container iconos">
-                <div class="row">
-                    <div class="col col-md-3 col-sm-6 col-6 col_responsive">
-                        <img src="img/como_comprar.png" alt="">
-                        <h6 class="mb-0">¿Cómo comprar?</h6>
-                    </div>
-                    <div class="col col-md-3 col-sm-6 col-6 col_responsive">
-                        <img src="img/envios.png" alt="">
-                        <h6 class="mb-0">Envíos</6>
-                    </div>
-                    <div class="col col-md-3 col-sm-6 col-6">
-                        <img src="img/medios_pago.png" alt="">
-                        <h6 class="mb-0">Medios de Pago</h6>
-                    </div>
-                    <div class="col col-md-3 col-sm-6 col-6">
-                        <img src="img/descuentos.png" alt="">
-                        <h6 class="mb-0">Promos Bancarias</6>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Categorias -->
-        <section class="categorias container">
-            <div class="row">
-                <div class="col col-4 col-md-2">
-                    <a href=""><h6 class="items_categorias">Manga</h6></a>
-                </div>
-                <div class="col col-4 col-md-2">
-                    <a href=""><h6 class="items_categorias">Comic</h6></a>
-                </div>
-                <div class="col col-4 col-md-2">
-                    <a href=""><h6 class="items_categorias">Aventura</h6></a>
-                </div>
-                <div class="col col-4 col-md-2">
-                    <a href=""><h6 class="items_categorias">Fantasia</h6></a>
-                </div>
-                <div class="col col-4 col-md-2">
-                    <a href=""><h6 class="items_categorias">C.  Ficción</h6></a>
-                </div>
-                <div class="col col-4 col-md-2">
-                    <a href=""><h6 class="items_categorias">Romance</h6></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="container foro_lecturas">
-            <div class="row">
-                <div class="col col-12 col-md-6 foro1">
-                    <h1 class="blanco_24_600">Foro</h1>
-                    <h6>Me recomiendan un libro para salir del bloqueo lector</h6>
-                    <h6>Recomendación: Mistborn de Brandon Sanderson</h6>
-                    <h6>Me ayudan a encontrar este libro?</h6>
-                </div>
-
-                <div class="col col-12 col-md-6 foro2">
-                    <h1 class="blanco_24_600">¿Te gustaria compartir tus lecturas con otros lectores en Nuestro Foro?</h1>
-                    <input type="text" class="form-control" name="" id="" placeholder="Dejanos tu eMail">
-                    <h6 class="btn btn-primary quiero_sumarme mt-3">¡Quiero sumarme!</h6>
-                </div>
-            </div>
-        </section>
-    </main>
-    
-    <!-- Footer -->
-    <footer class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col col-12 col-sm-12 col-md-3 ">
-                    <img src="img/logo_bizary_blanco.png" alt="" class="logo_footer">
-                    <div class="footer_1">
-                        <a href="#" class="blanco_18_600" >APP</a>
-                        <a href="#" class="blanco_18_600" >Conocenos</a>
-                    </div>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-3 footer_2">
-                    <h6 class="blanco_18_600">Información</h6>
-                    <a href="#" class="interlineado_footer">Términos y Condiciones</a>
-                    <a href="#" class="interlineado_footer">Privacidad</a>
-                    <a href="#" class="interlineado_footer arrepentimiento">Botón de Arrepentimiento</a>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-3">
-                    <h6 class="blanco_18_600">Contáctanos</h6>
-                    <h6 class="interlineado_footer">Mitre 124, BsAs, Argentina</h6>
-                    <h6 class="interlineado_footer">+54 9 1144556677</h6>
-                    <h6 class="interlineado_footer">bizary@librerias.com</h6>
-                </div>
-                <div class="col col-12 col-sm-12 col-md-3 redes-sociales">
-                    <h6 class="blanco_18_600">Redes Sociales</h6>
-                    <a href="#"><img src="img/instagram.png" alt=""></a>
-                    <a href="#"><img src="img/facebook.png" alt=""></a>
-                    <a href="#"><img src="img/twitter.png" alt=""></a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col derechos_reservados">
-                    <h6>Todos los derechos reservados - Bizary by Digit@lers - Grupo 3</h6>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
